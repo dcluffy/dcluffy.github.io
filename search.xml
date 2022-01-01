@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>PE使用说明</title>
+    <url>/2021/10/08/PE%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</url>
+    <content><![CDATA[<h1 id="如何进入PE系统"><a href="#如何进入PE系统" class="headerlink" title="如何进入PE系统"></a>如何进入PE系统</h1><p>无论您是想装系统、拯救文件还是破解密码等，您要做的第一步就是从U盘启动进入PE系统。</p>
+<p>本教程为微PE官方教程，其他PE操作也是一样的，<a href="https://www.wepe.com.cn/download.html">点击下载微PE</a></p>
+<span id="more"></span>
+
+<blockquote>
+<p><strong>启动PE系统的关键操作顺序：</strong></p>
+<p>第一步：在开机时进入主板的启动项列表；<br>第二步：找到要启动的U盘，并辨别UEFI和Legeacy方式；<br>第三步：选择一个合适的WinPE系统版本进入。</p>
+</blockquote>
+<p><img src="01.jpg"></p>
+<h2 id="第一步：在开机时进入主板的启动项列表"><a href="#第一步：在开机时进入主板的启动项列表" class="headerlink" title="第一步：在开机时进入主板的启动项列表"></a>第一步：在开机时进入主板的启动项列表</h2><p>请将电脑关机，将微PE优盘插入到电脑后开机。然后在开机后的几秒内，当出现开机画面，按下快捷启动热键<kbd>F12</kbd>（不同机型请查看下面快捷键列表）进入启动项列表，然后在列表中通过方向键选择U盘所在选项，一般会带USB字样或者是U盘的品牌名（Sandisk、Toshiba之类），然后敲击回车可以进入U盘的PE菜单选择界面。</p>
+<p>以下为各种品牌的主板和笔记本的快捷启动按键：</p>
+<table>
+   <tr>
+      <td colspan="2" align="center">组装机主板</td>
+      <td colspan="2" align="center">品牌电脑</td>
+   </tr>
+   <tr>
+      <td align="center">主板品牌</td>
+      <td align="center">启动按键</td>
+      <td align="center">电脑品牌</td>
+      <td align="center">启动按键</td>
+   </tr>
+   <tr>
+      <td align="center">华硕主板</td>
+      <td align="center">F8</td>
+      <td align="center">联想电脑</td>
+      <td align="center">F12</td>
+   </tr>
+   <tr>
+      <td align="center">技嘉主板</td>
+      <td align="center">F12</td>
+      <td align="center">宏基电脑</td>
+      <td align="center">F12</td>
+   </tr>
+   <tr>
+      <td align="center">微星主板</td>
+      <td align="center">F11</td>
+      <td align="center">华硕电脑</td>
+      <td align="center">ESC或F8</td>
+   </tr>
+   <tr>
+      <td align="center">映泰主板</td>
+      <td align="center">F9</td>
+      <td align="center">惠普电脑</td>
+      <td align="center">F9或F12</td>
+   </tr>
+   <tr>
+      <td align="center">梅捷主板</td>
+      <td align="center">ESC或F12</td>
+      <td align="center">联想Thinkpad</td>
+      <td align="center">F12</td>
+   </tr>
+   <tr>
+      <td align="center">七彩虹主板</td>
+      <td align="center">ESC或F11</td>
+      <td align="center">戴尔电脑</td>
+      <td align="center">F12或ESC</td>
+   </tr>
+   <tr>
+      <td align="center">华擎主板</td>
+      <td align="center">F11</td>
+      <td align="center">神舟电脑</td>
+      <td align="center">F12</td>
+   </tr>
+   <tr>
+      <td align="center">斯巴达克主板</td>
+      <td align="center">ESC</td>
+      <td align="center">东芝电脑</td>
+      <td align="center">F12</td>
+   </tr>
+   <tr>
+      <td align="center">昂达主板</td>
+      <td align="center">F11</td>
+      <td align="center">三星电脑</td>
+      <td align="center">F12或F2</td>
+   </tr>
+   <tr>
+      <td align="center">双敏主板</td>
+      <td align="center">ESC</td>
+      <td align="center">IBM电脑</td>
+      <td align="center">F12</td>
+   </tr>
+   <tr>
+      <td align="center">翔升主板</td>
+      <td align="center">F10</td>
+      <td align="center">富士通电脑</td>
+      <td align="center">F12</td>
+   </tr>
+   <tr>
+      <td align="center">精英主板</td>
+      <td align="center">ESC或F11</td>
+      <td align="center">海尔电脑</td>
+      <td align="center">F12</td>
+   </tr>
+   <tr>
+      <td align="center">冠盟主板</td>
+      <td align="center">F11或F12</td>
+      <td align="center">方正电脑</td>
+      <td align="center">F12</td>
+   </tr>
+   <tr>
+      <td align="center">富士康主板</td>
+      <td align="center">ESC或F12</td>
+      <td align="center">清华同方电脑</td>
+      <td align="center">F12</td>
+   </tr>
+   <tr>
+      <td align="center">顶星主板</td>
+      <td align="center">F11或F12</td>
+      <td align="center">微星电脑</td>
+      <td align="center">F11</td>
+   </tr>
+   <tr>
+      <td align="center">铭瑄主板</td>
+      <td align="center">ESC或F11</td>
+      <td align="center">明基电脑</td>
+      <td align="center">F9或F8</td>
+   </tr>
+   <tr>
+      <td align="center">盈通主板</td>
+      <td align="center">F8</td>
+      <td align="center">技嘉电脑</td>
+      <td align="center">F12</td>
+   </tr>
+   <tr>
+      <td align="center">捷波主板</td>
+      <td align="center">ESC</td>
+      <td align="center">Gateway电脑</td>
+      <td align="center">F12</td>
+   </tr>
+   <tr>
+      <td align="center">Intel主板</td>
+      <td align="center">F12</td>
+      <td align="center">eMachines电脑</td>
+      <td align="center">F12</td>
+   </tr>
+   <tr>
+      <td align="center">杰微主板</td>
+      <td align="center">ESC或F8</td>
+      <td align="center">索尼电脑</td>
+      <td align="center">ESC</td>
+   </tr>
+   <tr>
+      <td align="center">致铭主板</td>
+      <td align="center">F12</td>
+      <td align="center">苹果电脑</td>
+      <td align="center">长按“option”键</td>
+   </tr>
+   <tr>
+      <td align="center">磐英主板</td>
+      <td align="center">ESC</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td align="center">磐正主板</td>
+      <td align="center">ESC</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td align="center">冠铭主板</td>
+      <td align="center">F9</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td colspan="4" align="center">注意：其它机型请尝试或参考以上品牌常用启动热键</td>
+   </tr>
+</table>
+
+
+<p><em>另外您还可以在BIOS设置中，将U盘设置为第一启动项启动U盘，具体方法可以百度。</em></p>
+<h2 id="第二步：找到要启动的U盘，并辨别UEFI和Legeacy方式"><a href="#第二步：找到要启动的U盘，并辨别UEFI和Legeacy方式" class="headerlink" title="第二步：找到要启动的U盘，并辨别UEFI和Legeacy方式"></a>第二步：找到要启动的U盘，并辨别UEFI和Legeacy方式</h2><p>微PE优盘支持两种启动方式：</p>
+<ul>
+<li><strong>UEFI</strong></li>
+<li><strong>Legacy</strong></li>
+</ul>
+<p><strong>当您的机器支持UEFI的话（新机器一般同时支持Legacy和UEFI），在这个启动项中一般会出现两个U盘的选项，一个是UEFI开头的，另一个是不带UEFI开头的或叫Legacy的：</strong></p>
+<p><img src="02.png"></p>
+<p><img src="03.png"></p>
+<p><strong>当您的机器（老机器）只支持Legacy时，在这个主板的启动项中就只会出现一个U盘的选项：</strong></p>
+<p><img src="04.png"></p>
+<p><img src="05.png"></p>
+<p><img src="06.png"></p>
+<p>UEFI/Legacy启动方式的选择，对后续安装系统的时候影响比较大，一般情况下，如果需要用EFI方法安装系统（硬盘分区表为GPT），就启动UEFI的PE。如果用传统方式安装系统（硬盘分区表为MBR），就Legacy启动方式启动PE，这个按照您自己的需求选择。如果不清楚的话可随意先进一个，如果后面遇到问题再回来重选即可。如果是只支持Legacy启动的老机器，那就没得选，只能以Legacy方式启动PE。</p>
+<p><em>注意：一些新机器默认了只开通了UEFI启动，如果需要打开Legacy启动，需要进BIOS设置中关闭SecureBoot。</em></p>
+<p>选中需要启动的U盘选项，继续敲回车之后，均会先进入PE版本选择界面。但以不同的方式进入，显示的PE选择界面是不同的。<strong>Legacy启动时，PE选择菜单为蓝色天空背景。UEFI启动时，PE选择菜单为黑色纯色背景。</strong></p>
+<p><img src="07.png"></p>
+<p><img src="08.png"></p>
+<h2 id="第三步：选择一个合适的WinPE系统版本进入"><a href="#第三步：选择一个合适的WinPE系统版本进入" class="headerlink" title="第三步：选择一个合适的WinPE系统版本进入"></a>第三步：选择一个合适的WinPE系统版本进入</h2><p>微PE优盘支持多个PE系统，在黑色或蓝色PE选择界面可以按需选择，legacy启动的蓝色菜单可以让您自由决定PE系统版本和位数32位或64位，而UEFI启动的黑色菜单，已经按照机器的情况自动确定了位数，您只能选择系统版本。10PE和8PE是目前最常用的两种PE，10PE用于比较新的机器，8PE用于比较老的机器。如果不太清楚，选默认第一个Win10PEx64就好。选中后，敲击回车正式进入PE系统。</p>
+<p><img src="09.png"></p>
+<p><img src="10.png"></p>
+<p>如果您能成功进入到这个PE桌面，并且知道自己进入的是legacy方式的PE，还是UEFI方式的PE（通过在PE版本选择菜单页中背景是蓝色/黑色确定），就完成第一步。虽然现在看起来只完成了一小步，但这是迈向成功的一大步。</p>
+<hr>
+<h1 id="判断分区表类型"><a href="#判断分区表类型" class="headerlink" title="判断分区表类型"></a>判断分区表类型</h1><p>进行到这里，您就已经成功进入了微PE的桌面了，但是为了您能够正确的使用PE，避免各种可能出现的问题、保护数据安全，请务必按照这里的要求，了解您的本地磁盘结构。并确认自己系统盘所在的磁盘号和磁盘分区表类型。</p>
+<p><img src="11.png"></p>
+<h2 id="PE下的盘符顺序和本地系统内很可能不同"><a href="#PE下的盘符顺序和本地系统内很可能不同" class="headerlink" title="PE下的盘符顺序和本地系统内很可能不同"></a>PE下的盘符顺序和本地系统内很可能不同</h2><p>PE下的硬盘驱动器盘符的顺序（就是C盘、D盘、E盘…这种盘的顺序）和本地系统内看到的可能不一样，特别当您电脑里有2块以上硬盘的时候。平时您在正常系统内看到的C盘，很有可能在PE里就显示成了D盘E盘之类的，您在PE内看的C盘有可能不是真正的那种系统盘“C盘”。这是一种PE内正常的磁盘错乱的现象。没关系，不用管就行了。您只需要认准一件事情：通过分析磁盘结构和分区结构，确认自己的系统盘的位置和盘符即可。</p>
+<p><img src="12.png"></p>
+<h2 id="使用分区工具查看硬盘的分区结构"><a href="#使用分区工具查看硬盘的分区结构" class="headerlink" title="使用分区工具查看硬盘的分区结构"></a>使用分区工具查看硬盘的分区结构</h2><p>进行这个操作需要借助专业的分区工具，这里我们推荐分区助手，比较简单直观。打开PE桌面上的“分区助手(无损)”。查看电脑里的硬盘和分区信息，了解每个硬盘的分区表类型，并定位系统分区所在位置，您大概会看到下面三种情况：</p>
+<p><img src="13.png"></p>
+<p><img src="14.png"></p>
+<p><img src="15.png"></p>
+<h2 id="观察硬盘分区表类型方法"><a href="#观察硬盘分区表类型方法" class="headerlink" title="观察硬盘分区表类型方法"></a>观察硬盘分区表类型方法</h2><p>硬盘分区表有两种类型：</p>
+<ul>
+<li><strong>GPT</strong></li>
+<li><strong>MBR</strong></li>
+</ul>
+<p>从以上图片中红色框框中圈出的位置上，我们可以准确辨别出硬盘的分区表类型。</p>
+<p>如果概括起来解释这两种分区表的区别，就是：</p>
+<ul>
+<li><strong>GPT</strong> <em>新型分区表类型，需对应UEFI启动，支持快速启动，支持2TB以上硬盘</em></li>
+<li><strong>MBR</strong> <em>传统分区表类型，需对应Legacy启动，旧机器上比较常见</em></li>
+</ul>
+<p><strong>请记下您的分区表类型，这很重要。</strong></p>
+<h2 id="观察系统盘所在硬盘和分区方法："><a href="#观察系统盘所在硬盘和分区方法：" class="headerlink" title="观察系统盘所在硬盘和分区方法："></a>观察系统盘所在硬盘和分区方法：</h2><p>通常情况下，PE下的C盘就是系统所在分区和硬盘。打开分区助手之后，直接去找被分配为C盘的那个分区。并通过下面这个策略去验证这个C盘是不是真正的系统所在分区：</p>
+<ul>
+<li><p>对于MBR分区表的硬盘，一般第一个大容量的主分区就是系统盘所在分区。</p>
+</li>
+<li><p>对于GPT分区表的硬盘，一般第一个大容量的GPT就是所在分区。</p>
+</li>
+<li><p>打开PE桌面上的此电脑（计算机），打开C盘，看看里面有木有Windows目录。 其实，PE里，绝大多数系统盘所在分区，都会被分配为C盘。以上就是保险起见的多次确认。</p>
+</li>
+</ul>
+<p><strong>请记下您的硬盘上系统盘的位置，这很重要。</strong></p>
+<p><img src="16.png"></p>
+<p>如果您是全新机器装系统，或者想整体格式化一下磁盘，清除全部数据，全新安装系统，那么以上文字可以暂时忽略。 至此，您已经进入PE，并分析好了电脑里硬盘和分区的情况，掌握了您的系统盘所在位置。您当前已经具备了正确使用微PE优盘基本条件。下面您就按照自己的需要做想做的事情了。开始吧。</p>
+<hr>
+<h1 id="原生安装Windows8-1-amp-10"><a href="#原生安装Windows8-1-amp-10" class="headerlink" title="原生安装Windows8.1&amp;10"></a><span id="jump">原生安装Windows8.1&amp;10</span></h1><p><em>本篇教程将详细介绍使用微PE安装微软原版系统的具体方法流程、注意事项、异常问题解决等。</em></p>
+<p><em>Windows PE系统的全称叫做Windows Preinstallation Environment，即Windows预安装环境。顾名思义，这是安装系统前需要进入的环境，为安装系统而生。在PE内，通过挂载微软原版的系统ISO镜像，执行原生的安装程序SETUP.EXE，进入安装界面，这种方法安装系统，是最原生的安装方式。本方法同时支持UEFI和Legacy启动的系统安装，并且不管是UEFI方式还是Legacy方式，具体安装系统操作步骤都一样。</em></p>
+<p><em>本方法支持的系统：Windows 7，Windows 8.1，Windows 10等NT6系列的全部系统。本方法不支持安装XP。</em></p>
+<p><img src="17.png"></p>
+<h2 id="安装系统前的准备工作"><a href="#安装系统前的准备工作" class="headerlink" title="安装系统前的准备工作"></a>安装系统前的准备工作</h2><p>使用微PE优盘安装系统的具体操作步骤并不多，如果能按照下面的要求做足充分的判断，可极大提高成功率。</p>
+<ul>
+<li><p><strong>确认自己要安装的系统位数是64位还是32位？</strong></p>
+<p>如果是安装64位系统，则必须进入64位PE，如果是安装32位系统，请首选进入32位PE。</p>
+</li>
+<li><p><strong>原生安装方式对UEFI还是Legacy启动PE有严格要求</strong></p>
+<p>UEFI启动的系统，系统盘所在硬盘的分区表为GPT，PE应为UEFI启动。</p>
+<p>Legacy启动的系统，系统盘所在硬盘的分区表为MBR，PE应为Legacy启动。</p>
+<p>请牢记UEFI&lt;-&gt;GPT和Legacy&lt;-&gt;MBR的这种对应关系。并通过当前硬盘的分区表类型判断机器之前是哪种方式启动。</p>
+<p>若PE启动方式选择错误可以重新选择。</p>
+</li>
+<li><p><strong>判断系统盘所在硬盘的位置？</strong></p>
+<p>如果您的机器上装了多块硬盘，请做好区分，别装错了。如果需要提前分区，就先分好再装。</p>
+</li>
+<li><p><strong>请务必提前做好数据备份</strong></p>
+<p>安装的时候要格式化C盘，请务必将C盘文件备份至其他。必要时，将文档照片类的不可再生数据存储至外部存储器一份。</p>
+</li>
+</ul>
+<h2 id="正式开始安装系统"><a href="#正式开始安装系统" class="headerlink" title="正式开始安装系统"></a>正式开始安装系统</h2><p>安装原版系统的操作步骤为：</p>
+<ul>
+<li>第一步：PE内将要安装的系统ISO镜像挂载为虚拟光驱；</li>
+<li>第二步：运行Windows安装程序Setup.exe一步一步开始安装；</li>
+<li>第三步：等待系统安装完成，做最后的系统配置；</li>
+<li>第四步：进入桌面，装驱动装软件。</li>
+</ul>
+<h3 id="第一步：将要安装的系统ISO镜像挂载为虚拟光驱"><a href="#第一步：将要安装的系统ISO镜像挂载为虚拟光驱" class="headerlink" title="第一步：将要安装的系统ISO镜像挂载为虚拟光驱"></a>第一步：将要安装的系统ISO镜像挂载为虚拟光驱</h3><p>从U盘启动进入PE内，打开U盘内的存放系统镜像的“ISO”目录，找到要安装的镜像。</p>
+<p><img src="18.png"></p>
+<p>对着ISO镜像点右键，选择挂载，或者直接双击，该ISO就会被挂载为一个新的虚拟的光盘驱动器，和插入安装光盘效果类似。它会显示在“我的电脑”里，并且有一个盘符。</p>
+<p><img src="19.png"></p>
+<h3 id="第二步：运行Windows安装程序Setup-exe一步一步开始安装"><a href="#第二步：运行Windows安装程序Setup-exe一步一步开始安装" class="headerlink" title="第二步：运行Windows安装程序Setup.exe一步一步开始安装"></a>第二步：运行Windows安装程序Setup.exe一步一步开始安装</h3><p>运行这个虚拟盘符内的windows安装程序Setup.exe，就进入了windows的原版安装界面。</p>
+<p><img src="20.png"></p>
+<p>在Windows安装程序中点击“现在安装”开始，一步步往里点。</p>
+<p><img src="21.png"></p>
+<p>有对应产品密钥就输入，没有产品密钥就跳过输入密钥，待安装完系统再想办法激活。</p>
+<p><img src="22.png"></p>
+<p><img src="23.png"></p>
+<p><img src="24.png"></p>
+<p>系统版本那里自行选择，安装类型那里选择 “自定义”，直到进入到待安装磁盘位置的页面。</p>
+<p><img src="25.png"></p>
+<p>在这个界面中，需要做一个操作，来提升提升安装成功率。请先定位到您系统盘的位置，观察前面有几个小分区，百十来兆的样子，有时候一个，有时候两个，直接把小分区连同系统大分区一起删除。是的您没听错，选中后直接点红××删除它们，留下一个完整的“未分配空间”。</p>
+<p><img src="26.png"></p>
+<p>然后在这个未分配空间上点下一步，这个时候系统就开始安装了。</p>
+<p><img src="27.png"></p>
+<p>如果不出意外，等进度走完，重启后，就进入了安装配置阶段。</p>
+<p><img src="28.png"></p>
+<p><img src="29.png"></p>
+<h3 id="第三步：等待系统安装完成，做最后的系统配置"><a href="#第三步：等待系统安装完成，做最后的系统配置" class="headerlink" title="第三步：等待系统安装完成，做最后的系统配置"></a>第三步：等待系统安装完成，做最后的系统配置</h3><p>重启后，进入系统最后配置页，这里会要求您做一些简单的设置，创建登录账户，按照提示操作即可。怎么选都可以。</p>
+<p><img src="30.png"></p>
+<p><img src="31.png"></p>
+<p><img src="32.png"></p>
+<p><img src="33.png"></p>
+<p><img src="34.png"></p>
+<p><img src="35.png"></p>
+<p><img src="36.png"></p>
+<p>至此，系统就算安装完毕了。</p>
+<h3 id="第四步：进入桌面，装驱动装软件"><a href="#第四步：进入桌面，装驱动装软件" class="headerlink" title="第四步：进入桌面，装驱动装软件"></a>第四步：进入桌面，装驱动装软件</h3><p>进入到桌面后，请尽快安装驱动，您可以自己提前备好需要安装的驱动，也可以用驱动精灵联网装驱动。</p>
+<p>至此，全部工作结束，尽情享用吧。</p>
+<h2 id="常见异常问题解决"><a href="#常见异常问题解决" class="headerlink" title="常见异常问题解决"></a>常见异常问题解决</h2><ul>
+<li><p><strong>1.提示“Windows 无法安装到这个磁盘。选中的磁盘具有MBR分区表。在 EFI 系统上，Windows 只能安装到 GPT 磁盘”</strong></p>
+<p>遇到这种报错，是因为要安装系统的那块硬盘是MBR分区表，需要legacy启动的PE才能安装，而PE却是UEFI启动的，因此报错。解决方法是：重启电脑,以legacy方式进入PE，再进行安装就好了。请牢记UEFI&lt;-&gt;GPT和Legacy&lt;-&gt;MBR的这种对应关系。只要严格按照必读教程的要求来，这个提示是不会遇到的。</p>
+</li>
+<li><p><strong>2.提示“windows无法安装到这个磁盘 选中的磁盘采用GPT分区形式”</strong></p>
+<p>和第一种错误恰恰相反，是因为要安装系统的那块硬盘是GPT分区表，而PE却是Legacy启动的。解决方法是：重启电脑,以UEFI方式进入PE，再进行安装就好了。</p>
+</li>
+</ul>
+<hr>
+<h1 id="原生安装Windows7"><a href="#原生安装Windows7" class="headerlink" title="原生安装Windows7"></a>原生安装Windows7</h1><p><em>本篇教程将详细介绍使用微PE安装微软原版Windows7系统的具体方法流程、注意事项、异常问题解决等。</em></p>
+<p><em>其实原生安装Windows7的方法和安装Windows8.1或10的方法步骤完全一样，但由于Win7这个系统比较老，在一些新机器上安装会出问题，这里单独说一注意事项</em></p>
+<p><img src="37.jpg"></p>
+<h2 id="原生安装Windows7的特别提示"><a href="#原生安装Windows7的特别提示" class="headerlink" title="原生安装Windows7的特别提示"></a>原生安装Windows7的特别提示</h2><ul>
+<li><p>1.如果需要原生安装Windows7，必须进入Win8PE。</p>
+</li>
+<li><p>2.原版的Windows7比较老，原生连USB3.0驱动都没有，只能装到比较老的机器上。在新机器上要么蓝屏，要么鼠标键盘动不了。</p>
+</li>
+<li><p>3.如果坚持必须要在新机器上安装Windows7，请在安装完成后使用Dism++工具往本地安装好的系统上注入USB3.0和NVME驱动。</p>
+</li>
+<li><p>4.如果觉着注入新驱动比较麻烦，可以通过下面的链接获得一份打了NVME驱动和USB3.0的Windows7原版镜像ISO。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">链接: https://pan.baidu.com/s/1GyumDVO3jWwJC_vDTbodCg?pwd=w6uj 提取码: w6uj</span><br></pre></td></tr></table></figure></li>
+<li><p>5.我们不建议新机器装Windows7，性能发挥不出来。也无法使用新的高级特性，如果因为某些软件必须Win7的缘故，建议用虚拟机安装一个Windows7。</p>
+</li>
+</ul>
+<h2 id="安装Windows7的具体流程"><a href="#安装Windows7的具体流程" class="headerlink" title="安装Windows7的具体流程"></a>安装Windows7的具体流程</h2><p>与安装Windows8.1或10的方法一样</p>
+<hr>
+<h1 id="安装器方法安装原版Windows"><a href="#安装器方法安装原版Windows" class="headerlink" title="安装器方法安装原版Windows"></a>安装器方法安装原版Windows</h1><p><em>本篇教程将详细介绍使用微PE中的第三方windows安装器安装微软原版系统的具体方法流程、注意事项、异常问题解决等。</em></p>
+<p><em>第三方的Windows安装器利用了与微软原版Windows安装程序一样的原理，直接将系统中的文件，解压到硬盘上，实现最终的安装。 该方式的特点是：安装系统和PE的启动类型、PE的位数无关，以任何方式启动的PE，均能将系统安装至任意分区表类型的硬盘上。</em></p>
+<p><em>本方法支持的系统：Windows 7，Windows 8.1，Windows 10等NT6系列的全部系统。甚至支持安装XP。</em></p>
+<p><img src="38.png"></p>
+<h2 id="安装系统前的准备工作-1"><a href="#安装系统前的准备工作-1" class="headerlink" title="安装系统前的准备工作"></a>安装系统前的准备工作</h2><p>使用安装器安装系统的具体操作步骤并不多，如果能按照下面的要求做足充分的判断，可极大提高成功率。</p>
+<ul>
+<li><p><strong>观察自己的系统所在硬盘是GPT分区表还是MBR</strong></p>
+<p>如果是MBR的分区表，这样装就好。如果是GPT分区表，推荐原生安装方法：<a href="#jump">原生安装Windows8.1&amp;10</a>，或者是安装完手工修复一下UEFI引导。</p>
+</li>
+<li><p><strong>判断系统盘所在硬盘的位置？</strong></p>
+<p>如果您的机器上装了多块硬盘，请做好区分，别装错了。如果需要提前分区，就先分好再装。</p>
+</li>
+<li><p><strong>请务必提前做好数据备份</strong></p>
+<p>安装的时候要格式化C盘，请务必将C盘文件备份至其他。必要时，将文档照片类的不可再生数据存储至外部存储器一份。</p>
+</li>
+</ul>
+<h2 id="正式开始安装系统-1"><a href="#正式开始安装系统-1" class="headerlink" title="正式开始安装系统"></a>正式开始安装系统</h2><p>安装器安装原版系统的操作步骤为：</p>
+<ul>
+<li>第一步：PE内将要安装的系统ISO镜像挂载为虚拟光驱；</li>
+<li>第二步：打开桌面上的Windows安装器，输入选项后安装；</li>
+<li>第三步：等待系统安装完成，做最后的系统配置；</li>
+<li>第四步：进入桌面，装驱动装软件。</li>
+</ul>
+<h3 id="第一步：将要安装的系统ISO镜像挂载为虚拟光驱-1"><a href="#第一步：将要安装的系统ISO镜像挂载为虚拟光驱-1" class="headerlink" title="第一步：将要安装的系统ISO镜像挂载为虚拟光驱"></a>第一步：将要安装的系统ISO镜像挂载为虚拟光驱</h3><p>从U盘启动进入PE内，打开U盘内的存放系统镜像的“ISO”目录，找到要安装的镜像。</p>
+<p><img src="39.png"></p>
+<p>对着ISO镜像点右键，选择挂载，或者直接双击，该ISO就会被挂载为一个新的虚拟的光盘驱动器，和插入安装光盘效果类似。它会显示在“我的电脑”里，并且有一个盘符。</p>
+<p><img src="40.png"></p>
+<h3 id="第二步：打开桌面上的Windows安装器，输入选项后安装"><a href="#第二步：打开桌面上的Windows安装器，输入选项后安装" class="headerlink" title="第二步：打开桌面上的Windows安装器，输入选项后安装"></a>第二步：打开桌面上的Windows安装器，输入选项后安装</h3><p>执行桌面上的Windows安装器，按照提示进行选择。</p>
+<p><img src="41.png"></p>
+<p>Windows安装器顶部有两个选项卡，右边的支持WIN10、8.1、7的安装，左边的支持XP的安装。请注意区别对待。</p>
+<p><img src="42.png"></p>
+<p>在第一个选项中，请选择系统包install.wim的位置（在刚才挂载出来的虚拟光驱里的source文件夹里），比如H:\sources\install.wim等等。</p>
+<p><em>注：如果是安装XP的话，选择左侧的选项卡，第一个选项选择挂载出来的虚拟光驱根目录或I386。</em></p>
+<p><img src="43.png"></p>
+<p>其余的两项填写要安装到的目标系统盘，正常情况下选择 C: 即可</p>
+<p>当选择好三个选项之后，左下角的系统版本按照需要进行选择。</p>
+<p>之后就可以点击开始安装，在弹出的确认对话框中再次点确认即可开始安装。</p>
+<p><img src="44.png"></p>
+<p><img src="45.png"></p>
+<p>安装完成后，若没有自动重启，请手工重启。</p>
+<h3 id="第三步：等待系统安装完成，做最后的系统配置-1"><a href="#第三步：等待系统安装完成，做最后的系统配置-1" class="headerlink" title="第三步：等待系统安装完成，做最后的系统配置"></a>第三步：等待系统安装完成，做最后的系统配置</h3><p>重启后，进入系统最后配置页，这里会要求您做一些简单的设置，创建登录账户，按照提示操作即可。怎么选都可以。</p>
+<p><img src="46.png"></p>
+<p><img src="47.png"></p>
+<p><img src="48.png"></p>
+<p><img src="49.png"></p>
+<p><img src="50.png"></p>
+<p><img src="51.png"></p>
+<p><img src="52.png"></p>
+<p>至此，系统就算安装完毕了。</p>
+<h3 id="第四步：进入桌面，装驱动装软件-1"><a href="#第四步：进入桌面，装驱动装软件-1" class="headerlink" title="第四步：进入桌面，装驱动装软件"></a>第四步：进入桌面，装驱动装软件</h3><p>进入到桌面后，请尽快安装驱动，您可以自己提前备好需要安装的驱动，也可以用驱动精灵联网装驱动。</p>
+<p>至此，全部工作结束，尽情享用吧。</p>
+<hr>
+<h1 id="安装其它Ghost-amp-Wim格式系统"><a href="#安装其它Ghost-amp-Wim格式系统" class="headerlink" title="安装其它Ghost&amp;Wim格式系统"></a>安装其它Ghost&amp;Wim格式系统</h1><p><em>本篇教程将详细介绍使用微PE安装原版安装版以外Ghost&amp;Wim格式系统的具体方法流程、注意事项等。</em></p>
+<p><em>本方法支持的格式：.gho .wim</em></p>
+<h2 id="安装其它Ghost-amp-Wim格式系统的特别提示"><a href="#安装其它Ghost-amp-Wim格式系统的特别提示" class="headerlink" title="安装其它Ghost&amp;Wim格式系统的特别提示"></a>安装其它Ghost&amp;Wim格式系统的特别提示</h2><ul>
+<li>这类.gho .wim系统，可以从网上单独下载。</li>
+<li>安装这类系统的实质是将.gho .wim通过备份还原工具恢复到系统盘。</li>
+<li>这种方法一般只支持legacy启动，即磁盘是MBR分区表。如果硬要装到GPT并UEFI，需要单独修复UEFI引导。</li>
+</ul>
+<h2 id="安装其它Ghost-amp-Wim格式系统的具体流程"><a href="#安装其它Ghost-amp-Wim格式系统的具体流程" class="headerlink" title="安装其它Ghost&amp;Wim格式系统的具体流程"></a>安装其它Ghost&amp;Wim格式系统的具体流程</h2><p>进入PE后，打开桌面上的CGI工具。选择还原分区，选中要还原的分区位置，并选择要恢复的.gho .wim镜像。</p>
+<p>之后点开始执行，镜像就恢复到系统盘了。</p>
+<p><img src="53.png"></p>
+<hr>
+<h1 id="硬盘快速分区教程"><a href="#硬盘快速分区教程" class="headerlink" title="硬盘快速分区教程"></a>硬盘快速分区教程</h1><p><em>本篇教程将详细介绍使用微PE对硬盘进行完全格式化重新分区的具体方法流程、注意事项等。</em></p>
+<p><em>本方法支持的分区的格式为：GPT MBR</em></p>
+<h2 id="硬盘分区的特别提示"><a href="#硬盘分区的特别提示" class="headerlink" title="硬盘分区的特别提示"></a>硬盘分区的特别提示</h2><ul>
+<li>本分区教程会完全格式化硬盘，如果您需要无损分区，请参考：<a href="https://www.disktool.cn/jiaocheng/index.html">硬盘无损调整教程</a>。</li>
+<li>本分区方法可以将分区重新分为GPT或MBR。</li>
+<li>在分区操作之前，请务必做好数据备份。</li>
+</ul>
+<h2 id="硬盘分区的具体操作"><a href="#硬盘分区的具体操作" class="headerlink" title="硬盘分区的具体操作"></a>硬盘分区的具体操作</h2><p>进行这个操作需要借助专业的分区工具，这里我们推荐分区助手，比较简单直观。打开PE桌面上的“分区助手(无损)”。您会看到当前硬盘的列表。</p>
+<p><img src="54.png"></p>
+<p>对着需要分区的硬盘点右键，选择快速分区。</p>
+<p><img src="55.png"></p>
+<p>在弹出的快速分区窗口中选择需要分区的个数、分区表类型GPT或者MBR、4K对齐等，然后点击开始执行。</p>
+<blockquote>
+<p><strong>注意</strong></p>
+<p>如果您需要使用UEFI启动系统，这里必须选择GPT分区表，如果使用Legacy方式启动电脑，这里必须选择MBR。</p>
+</blockquote>
+<p><img src="56.png"></p>
+<p>等待执行完成之后，分区操作完毕。</p>
+<hr>
+<h1 id="修改本地Windows密码"><a href="#修改本地Windows密码" class="headerlink" title="修改本地Windows密码"></a>修改本地Windows密码</h1><p><em>本篇教程将详细介绍使用微PE修改本地Windows密码等。</em></p>
+<h2 id="修改本地Windows密码的特别提示"><a href="#修改本地Windows密码的特别提示" class="headerlink" title="修改本地Windows密码的特别提示"></a>修改本地Windows密码的特别提示</h2><ul>
+<li>该功能不可用于非法用途。</li>
+<li>该功能使用前需选确认本地Windows是否在C盘。</li>
+</ul>
+<h2 id="修改本地Windows密码的具体流程"><a href="#修改本地Windows密码的具体流程" class="headerlink" title="修改本地Windows密码的具体流程"></a>修改本地Windows密码的具体流程</h2><p>进入PE后，打开桌面上的“Windows密码修改”工具。</p>
+<p><img src="57.png"></p>
+<p>打开 C:\WINDOWS\SYSTEM32\CONFIG\SAM 可列出本地全部的账户。</p>
+<p>选中要修改的账户，点击解锁或更改密码，按照提示完成操作即可。</p>
+<hr>
+<h1 id="系统备份恢复"><a href="#系统备份恢复" class="headerlink" title="系统备份恢复"></a>系统备份恢复</h1><p><em>本篇教程将详细介绍使用微PE安装原版安装版以外Ghost&amp;Wim格式系统的具体方法流程、注意事项等。</em></p>
+<p><em>本方法支持的格式：.gho .wim .esd</em></p>
+<h2 id="系统备份恢复的特别提示"><a href="#系统备份恢复的特别提示" class="headerlink" title="系统备份恢复的特别提示"></a>系统备份恢复的特别提示</h2><ul>
+<li>备份恢复保存的镜像文件支持.gho .wim .esd。</li>
+<li>我们推荐使用wim格式的备份，特别是GPT分区表。</li>
+<li>在做系统备份操作之前，请多次确认恢复、备份的分区是否正确，以免数据丢失。</li>
+</ul>
+<h2 id="系统备份恢复的具体流程"><a href="#系统备份恢复的具体流程" class="headerlink" title="系统备份恢复的具体流程"></a>系统备份恢复的具体流程</h2><p><img src="58.png"></p>
+<h2 id="系统备份"><a href="#系统备份" class="headerlink" title="系统备份"></a>系统备份</h2><p>进入PE后，打开桌面上的CGI工具。选择备份分区，选中要备份的分区位置，并选择.gho .wim要保存的镜像位置。</p>
+<p>之后点开始执行，系统盘就备份到镜像了。</p>
+<h2 id="系统还原"><a href="#系统还原" class="headerlink" title="系统还原"></a>系统还原</h2><p>进入PE后，打开桌面上的CGI工具。选择还原分区，选中要还原的分区位置，并选择要恢复的.gho .wim镜像。</p>
+<p>之后点开始执行，镜像就恢复到系统盘了。</p>
+<hr>
+<p><code>以上内容均来自微PE官方教程，仅供个人学习之用</code></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Windows下用Pages服务搭建Hexo博客</title>
+    <url>/2021/11/04/Windows%E4%B8%8B%E7%94%A8Pages%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h4 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h4><p>1.注册 <a href="https://github.com/">GitHub</a> 账号/<a href="https://gitee.com/">Gitee</a>账号<br>2.下载安装 <a href="https://nodejs.org/zh-cn/">Node.js</a> LTS版本<br>3.下载安装 <a href="https://git-scm.com/">Git</a> </p>
+<span id="more"></span>
+
+<p>以下内容以Gitee为参考</p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>软件默认安装即可，建议之后的操作直接在Git Bash中完成，输入<code>npm -v</code>、<code>node -v</code>，看是否输出版本号，输出即安装成功</p>
+<p><img src="1701.png"></p>
+<h4 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h4><p>如果后续安装失败或速度太慢，可以换npm仓库源<br>设置源地址：<code>npm config set registry https://registry.npm.taobao.org/</code></p>
+<h4 id="新建仓库"><a href="#新建仓库" class="headerlink" title="新建仓库"></a>新建仓库</h4><p>Gitee新建仓库，仓库名建议与你的用户名一致，开源，分支模型master</p>
+<h4 id="配置Git"><a href="#配置Git" class="headerlink" title="配置Git"></a>配置Git</h4><p>在Git Bash中键入以下命令</p>
+<p><code>git config --global user.name &quot;你的Gitee用户名&quot;</code></p>
+<p><code>git config --global user.email &quot;你的Gitee注册邮箱&quot;</code></p>
+<p>随后键入<code>ssh-keygen -t rsa -C &quot;你的Gitee注册邮箱&quot;</code>，中间会要你输入密码，之后推送的时候就需要该密码，略显繁琐。建议直接回车即可，不要密码</p>
+<p>生成之后，文件路径也会显示出来，打开对应路径就可看见</p>
+<ul>
+<li><p>id_rsa文件是私钥，要保存好，放在本地，私钥可以生产公钥，反之不行</p>
+</li>
+<li><p>id_rsa.pub文件是公钥，可以用于发送到其他服务器，或者git上</p>
+</li>
+</ul>
+<p>用记事本之类的软件打开id_rsa.pub文件，并且复制全部内容。</p>
+<p>打开Gitee设置-安全设置-SSH公钥，将刚才复制的内容粘贴进去，取个名字，点击确定即可</p>
+<p>完成后键入<code>ssh -T git@gitee.com</code>进行测试，输入yes回车，成功的话会看见你的Gitee昵称和successfully字样</p>
+<h4 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h4><p>新建文件夹，用来放你的博客文件，进入文件夹后，空白处右键点击Git Bash Here，键入命令<code>npm install hexo-cli -g</code>安装Hexo，键入<code>hexo init</code>建立所需文件</p>
+<h5 id="命令简介："><a href="#命令简介：" class="headerlink" title="命令简介："></a>命令简介：</h5><blockquote>
+<p><code>hexo init [folder]</code></p>
+<p>新建一个网站。如果没有设置 <code>folder</code> ，Hexo 默认在目前的文件夹建立网站。</p>
+</blockquote>
+<blockquote>
+<p><code>hexo new [layout] &lt;title&gt;</code></p>
+<p>新建一篇文章。如果没有设置 <code>layout</code> 的话，默认使用 <a href="https://hexo.io/zh-cn/docs/configuration">_config.yml</a> 中的 <code>default_layout</code> 参数代替。如果标题包含空格的话，请使用引号括起来。</p>
+<p><code>hexo new &quot;post title with whitespace&quot;</code></p>
+<p>新建的文章位置：<code>博客根目录\source\_posts</code></p>
+</blockquote>
+<blockquote>
+<p><code>hexo generate</code></p>
+<p>简写：<code>hexo g</code></p>
+<p>生成静态文件。</p>
+</blockquote>
+<blockquote>
+<p><code>hexo server</code></p>
+<p>启动服务器。默认情况下，访问网址为： <code>http://localhost:4000/</code>。</p>
+</blockquote>
+<blockquote>
+<p><code>hexo deploy</code></p>
+<p>简写：<code>hexo d</code></p>
+<p>部署网站。</p>
+</blockquote>
+<blockquote>
+<p><code>hexo clean</code></p>
+<p>清除缓存文件 (<code>db.json</code>) 和已生成的静态文件 (<code>public</code>)。</p>
+<p>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p>
+</blockquote>
+<p><em>命令可以连在一起使用，格式如下：</em></p>
+<p><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</code></p>
+<h4 id="本地配置"><a href="#本地配置" class="headerlink" title="本地配置"></a>本地配置</h4><p>修改博客根目录下的<code>_config.yml</code>配置文件，加入以下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@gitee.com:username/仓库名.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p><img src="gitee.png"></p>
+<h4 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h4><p>接下来就可以开始推送了，但目前推送后要在Gitee Pages页面手动更新才行</p>
+<p><code>npm install hexo-deployer-git --save</code></p>
+<p><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2022/01/01/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<span id="more"></span>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>阿修罗3无线版手柄</title>
+    <url>/2021/12/26/%E9%98%BF%E4%BF%AE%E7%BD%973%E6%97%A0%E7%BA%BF%E7%89%88%E6%89%8B%E6%9F%84/</url>
+    <content><![CDATA[<h1 id="连接到电脑"><a href="#连接到电脑" class="headerlink" title="连接到电脑"></a><p align="center">连接到电脑</p></h1><blockquote>
+<p>通过PC360模式连接电脑，可以畅玩各类主流PC游戏</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="接收器-无线连接"><a href="#接收器-无线连接" class="headerlink" title="接收器 无线连接"></a>接收器 无线连接</h2><h3 id="1、接收器插入电脑"><a href="#1、接收器插入电脑" class="headerlink" title="1、接收器插入电脑"></a>1、接收器插入电脑</h3><p><img src="01.jpg"></p>
+<p>将无线接收器插入电脑USB接口</p>
+<p> <strong>状态提示：</strong></p>
+<p>指示灯缓慢闪烁，此时接收器处于无线配对模式</p>
+<h3 id="2、手柄开机自动连接"><a href="#2、手柄开机自动连接" class="headerlink" title="2、手柄开机自动连接"></a>2、手柄开机自动连接</h3><p><img src="02.jpg"></p>
+<p>轻按一下手柄的【北通LOGO键】开机，稍等片刻，手柄将自动与电脑连接；</p>
+<p> <strong>状态提示：</strong> </p>
+<p>当手柄震动一下，指示灯由绿色上下轮流慢闪变为常亮，即连接成功</p>
+<p>※ 成功连接后，指示灯的灯效初始默认为常亮，若曾通过“北通手柄助手”对手柄灯效进行调节，则灯效以实际调节的效果为准。</p>
+<p><a href="#qzpd">无法连接？点我强制配对 &gt;&gt;&gt;</a></p>
+<h3 id="3、切换手柄模式"><a href="#3、切换手柄模式" class="headerlink" title="3、切换手柄模式"></a>3、切换手柄模式</h3><p><img src="03.jpg"></p>
+<p>长按【北通LOGO键】3秒，切换手柄到PC360模式，即上灯条绿色亮起3秒，即可畅玩游戏。</p>
+<p><u>如果下灯亮起，则再次长按【北通LOGO键】3秒，即可切换。</u></p>
+<p> <strong>状态提示：</strong> </p>
+<blockquote>
+<p>【PC360模式】：上灯条绿色亮起3秒</p>
+<p>【BFM模式】：下灯条绿色亮起3秒</p>
+</blockquote>
+<h3 id="4、自动回连"><a href="#4、自动回连" class="headerlink" title="4、自动回连"></a>4、自动回连</h3><p><img src="04.jpg"></p>
+<p>接收器与手柄首次配对成功后，再次使用接收器时，接收器将自动回连手柄；</p>
+<p><u>将无线接收器插入电脑USB接口后，轻按一下手柄的【北通LOGO键】开机，稍等片刻，即可自动配对连接。</u></p>
+<h2 id="数据线-有线连接"><a href="#数据线-有线连接" class="headerlink" title="数据线 有线连接"></a>数据线 有线连接</h2><h3 id="1、数据线连接电脑"><a href="#1、数据线连接电脑" class="headerlink" title="1、数据线连接电脑"></a>1、数据线连接电脑</h3><p><img src="05.jpg"></p>
+<p>通过数据线将电脑与手柄直接连接；</p>
+<p> <strong>状态提示：</strong> </p>
+<p>指示灯缓慢闪烁，此时手柄处于充电状态</p>
+<h3 id="2、手柄开机自动连接-1"><a href="#2、手柄开机自动连接-1" class="headerlink" title="2、手柄开机自动连接"></a>2、手柄开机自动连接</h3><p><img src="06.jpg"></p>
+<p>轻按一下手柄的【北通LOGO键】开机，稍等片刻，手柄将自动与电脑连接；</p>
+<p> <strong>状态提示：</strong> </p>
+<p>当手柄震动一下，指示灯变为常亮，即连接成功</p>
+<p>※ 成功连接后，指示灯的灯效初始默认为常亮，若曾通过“北通手柄助手”对手柄灯效进行调节，则灯效以实际调节的效果为准。</p>
+<h3 id="3、切换手柄模式-1"><a href="#3、切换手柄模式-1" class="headerlink" title="3、切换手柄模式"></a>3、切换手柄模式</h3><p><img src="07.jpg"></p>
+<p>长按【北通LOGO键】3秒，切换手柄到PC360模式，即上灯条绿色亮起3秒，即可畅玩游戏。</p>
+<p><u>如果下灯亮起，则再次长按【北通LOGO键】3秒，即可切换。</u></p>
+<p> <strong>状态提示：</strong></p>
+<blockquote>
+<p>【PC360模式】：上灯条绿色亮起3秒</p>
+<p>【BFM模式】：下灯条绿色亮起3秒</p>
+</blockquote>
+<hr>
+<h1 id="连接到安卓电视"><a href="#连接到安卓电视" class="headerlink" title="连接到安卓电视"></a><p align="center">连接到安卓电视</p></h1><blockquote>
+<p>通过BFM模式连接市面上主流安卓电视，可畅玩各类电视游戏及云游戏</p>
+</blockquote>
+<h2 id="接收器-无线连接-1"><a href="#接收器-无线连接-1" class="headerlink" title="接收器 无线连接"></a>接收器 无线连接</h2><h3 id="1、接收器插入电视"><a href="#1、接收器插入电视" class="headerlink" title="1、接收器插入电视"></a>1、接收器插入电视</h3><p><img src="08.jpg"></p>
+<p>将无线接收器插入安卓电视USB接口</p>
+<p> <strong>状态提示：</strong> </p>
+<p>指示灯缓慢闪烁，此时接收器处于无线配对模式 </p>
+<p>※ 注意：如果电视USB接口处于电视背后，电视屏幕会对接收器信号产生一定干扰，导致无线距离缩短。建议通过USB延长线连接电视和无线接收器。</p>
+<h3 id="2、手柄开机自动连接-2"><a href="#2、手柄开机自动连接-2" class="headerlink" title="2、手柄开机自动连接"></a>2、手柄开机自动连接</h3><p><img src="09.jpg"></p>
+<p>轻按一下手柄的【北通LOGO键】开机，稍等片刻，手柄将自动与安卓电视连接</p>
+<p> <strong>状态提示：</strong> </p>
+<p>当手柄震动一下，指示灯由绿色上下轮流慢闪变为常亮，即连接成功</p>
+<p>※ 成功连接后，指示灯的灯效初始默认为常亮，若曾通过“北通手柄助手”对手柄灯效进行调节，则灯效以实际调节的效果为准。</p>
+<p><a href="#qzpd">无法连接？点我强制配对 &gt;&gt;&gt;</a></p>
+<h3 id="3、切换手柄模式-2"><a href="#3、切换手柄模式-2" class="headerlink" title="3、切换手柄模式"></a>3、切换手柄模式</h3><p><img src="10.jpg"></p>
+<p>长按【北通LOGO键】3秒，切换手柄模式到BFM模式，即下灯条绿色亮起3秒，即可畅玩游戏</p>
+<p><u>如果上灯条亮起，则再次长按【北通LOGO键】3秒，即可切换。</u></p>
+<p> <strong>状态提示：</strong> </p>
+<blockquote>
+<p>【PC360模式】：上灯条绿色亮起3秒</p>
+<p>【BFM模式】：下灯条绿色亮起3秒</p>
+</blockquote>
+<h3 id="4、自动回连-1"><a href="#4、自动回连-1" class="headerlink" title="4、自动回连"></a>4、自动回连</h3><p><img src="11.jpg"></p>
+<p>接收器与手柄首次配对成功后，再次使用接收器时，接收器将自动回连手柄；</p>
+<p><u>将无线接收器插入电视USB接口后，轻按一下手柄的【北通LOGO键】开机，稍等片刻，即可自动配对连接</u>。</p>
+<h2 id="数据线-有线连接-1"><a href="#数据线-有线连接-1" class="headerlink" title="数据线 有线连接"></a>数据线 有线连接</h2><h3 id="1、数据线连接安卓电视"><a href="#1、数据线连接安卓电视" class="headerlink" title="1、数据线连接安卓电视"></a>1、数据线连接安卓电视</h3><p><img src="12.jpg"></p>
+<p>通过数据线将安卓电视与手柄直接连接；</p>
+<p> <strong>状态提示：</strong> </p>
+<p>指示灯缓慢闪烁，此时手柄处于充电状态</p>
+<h3 id="2、手柄开机自动连接-3"><a href="#2、手柄开机自动连接-3" class="headerlink" title="2、手柄开机自动连接"></a>2、手柄开机自动连接</h3><p><img src="13.jpg"></p>
+<p>轻按一下手柄的【北通LOGO键】开机，稍等片刻，手柄将自动与安卓电视连接</p>
+<p> <strong>状态提示：</strong> </p>
+<p>当手柄震动一下，指示灯变为常亮，即连接成功</p>
+<p>※ 成功连接后，指示灯的灯效初始默认为常亮，若曾通过”北通手柄助手”对手柄灯效进行调节，则灯效以实际调节的效果为准。</p>
+<h3 id="3、切换手柄模式-3"><a href="#3、切换手柄模式-3" class="headerlink" title="3、切换手柄模式"></a>3、切换手柄模式</h3><p><img src="14.jpg"></p>
+<p>长按【北通LOGO键】3秒，切换手柄模式到BFM模式，即下灯条绿色亮起3秒，即可畅玩游戏</p>
+<p><u>如果上灯条亮起，则再次长按【北通LOGO键】3秒，即可切换。</u></p>
+<p> <strong>状态提示：</strong> </p>
+<p>【PC360模式】：上灯条绿色亮起3秒</p>
+<p>【BFM模式】：下灯条绿色亮起3秒</p>
+<hr>
+<h1 id="《北通手柄助手》配置软件"><a href="#《北通手柄助手》配置软件" class="headerlink" title="《北通手柄助手》配置软件"></a><p align="center">《北通手柄助手》配置软件</p></h1><blockquote>
+<p>手柄有线连接电脑，自定义设置灯光、震动、按键宏功能、摇杆曲线等</p>
+</blockquote>
+<h2 id="下载安装《北通手柄助手》PC版"><a href="#下载安装《北通手柄助手》PC版" class="headerlink" title="下载安装《北通手柄助手》PC版"></a>下载安装《北通手柄助手》PC版</h2><h3 id="1、下载并安装北通游戏厅"><a href="#1、下载并安装北通游戏厅" class="headerlink" title="1、下载并安装北通游戏厅"></a>1、下载并安装北通游戏厅</h3><p><img src="15.jpg"></p>
+<p>① 电脑上登录北通官网：<a href="http://www.betop-cn.com/">http://www.betop-cn.com/</a> ，进入【下载页面】</p>
+<p>② 选择【PC版下载】，下载安装好北通游戏厅PC版；</p>
+<h3 id="2、手柄有线连接电脑"><a href="#2、手柄有线连接电脑" class="headerlink" title="2、手柄有线连接电脑"></a>2、手柄有线连接电脑</h3><p><img src="16.jpg"></p>
+<p><em>！手柄必须通过有线方式连接电脑，方可使用《北通手柄助手》工具</em></p>
+<p>① 通过数据线将手柄与电脑连接；</p>
+<p>② 按下【北通LOGO键】开机，手柄自动连接；</p>
+<h3 id="3、启动北通手柄助手"><a href="#3、启动北通手柄助手" class="headerlink" title="3、启动北通手柄助手"></a>3、启动北通手柄助手</h3><p><img src="17.jpg"></p>
+<p>① 打开北通游戏厅PC版；</p>
+<p>② 在页面左侧【工具箱】中或手柄图标旁边，找到【北通手柄助手】入口，点击即可启动配置工具。</p>
+<h3 id="4、自动升级固件"><a href="#4、自动升级固件" class="headerlink" title="4、自动升级固件"></a>4、自动升级固件</h3><p><img src="18.jpg"></p>
+<p>① 北通手柄助手智能检测手柄及接收器固件版本，并自动启动升级；</p>
+<p>② 固件升级完成后，根据操作指引进行操作，即可完成手柄配置。</p>
+<blockquote>
+<p>※ 固件升级全程自动，不需要手动操作；</p>
+<p>※ 固件升级速度很快，大约30秒即可完成；</p>
+<p>※ 建议检测到新固件均进行升级，以修复部分问题并加持更多好玩的功能。</p>
+</blockquote>
+<h2 id="手柄功能自定义设置（必须有线连接电脑）"><a href="#手柄功能自定义设置（必须有线连接电脑）" class="headerlink" title="手柄功能自定义设置（必须有线连接电脑）"></a>手柄功能自定义设置（必须有线连接电脑）</h2><h3 id="1、基础设置"><a href="#1、基础设置" class="headerlink" title="1、基础设置"></a>1、基础设置</h3><p><img src="18.png"></p>
+<p><strong>【名称修改】</strong></p>
+<p>① 名称：可修改配置名称</p>
+<p><strong>【灯光调节】</strong></p>
+<p>① 类型：可修改灯光闪动模式</p>
+<blockquote>
+<p>  ※ 常规：所有灯光全部亮起</p>
+<p>  ※ 呼吸：所有灯光呼吸变化</p>
+<p>  ※ 水滴：灯光从上往下流动</p>
+</blockquote>
+<p>② 颜色：可修改灯光颜色，一共9色可选</p>
+<p>③ 颜色流动方向：按照颜色表顺序变换</p>
+<blockquote>
+<p>  ※ 单色：所有灯光单色常亮</p>
+<p>  ※ 顺时针：所有灯按颜色顺时针变换</p>
+<p>  ※ 逆时针：所有灯按颜色顺时针变换</p>
+</blockquote>
+<p>④ 亮度：调节灯光亮度，5档可选</p>
+<p>⑤ 频率：调节灯光变换频率，5档可选</p>
+<p><strong>【震动调节】</strong></p>
+<p>强度：可调节手柄震动反馈的强度</p>
+<h3 id="2、按键功能设置"><a href="#2、按键功能设置" class="headerlink" title="2、按键功能设置"></a>2、按键功能设置</h3><p><img src="19.jpg"></p>
+<p>可自定义修改手柄按键的映射。</p>
+<blockquote>
+<p>① LB、RB、M1、M2四个键，可自定义设置宏，也可键位映射其他按键；</p>
+<p>② 手柄其他按键仅可键位映射；</p>
+</blockquote>
+<p><strong>【键位映射】</strong></p>
+<p>可将手柄上的按键随意映射手柄其他键值</p>
+<blockquote>
+<p>例如将A键映射到B键，实现按A时触发B的动作；</p>
+<p>① 鼠标点击【A键】箭头后的输入框，删除键值；</p>
+<p>② 按下手柄上B键，即可将【A键】映射到【B键】；</p>
+</blockquote>
+<p><strong>【宏编程】</strong></p>
+<p>可将LB、RB、M1、M2进行宏编程，一个按键最高设置32个动作。</p>
+<p>能实时录制连招操作中【动作】【动作时长】和每个动作间的【时间间隔】，并可以毫秒为单位进行微调。</p>
+<blockquote>
+<p>例如设置LB键的一键宏：</p>
+<p>① 鼠标点击【LB键】旁边的【默认】；</p>
+<p>② 按键属性选择【宏】；</p>
+<p>③ 按实际连招操作，在手柄上操作一次，即可实时记录【动作】【动作时长】和每个动作间的【时间间隔】；</p>
+<p>④ 根据游戏实际情况，修改【动作时长】和【时间间隔】；</p>
+<p>⑤ 选择宏的触发方式，并设置是否循环，点击保存即可完成宏编程。</p>
+</blockquote>
+<h3 id="3、摇杆灵敏度设置"><a href="#3、摇杆灵敏度设置" class="headerlink" title="3、摇杆灵敏度设置"></a>3、摇杆灵敏度设置</h3><p><img src="20.png"></p>
+<p>该界面可实时查看灵敏度变化曲线，旋转摇杆旋钮即可调节</p>
+<hr>
+<h1 id="其他功能"><a href="#其他功能" class="headerlink" title="其他功能"></a><p align="center">其他功能</p></h1><h2 id="变速旋钮操作说明"><a href="#变速旋钮操作说明" class="headerlink" title="变速旋钮操作说明"></a>变速旋钮操作说明</h2><p>物理变速旋钮，可以实时调整摇杆灵敏度。</p>
+<p>每旋转三下，三颗指示灯颜色统一时，即为调节一档。</p>
+<p><img src="21.png"></p>
+<p>出厂默认为第4档，灵敏度指示灯为白色。</p>
+<p>顺时针旋转增加灵敏度，逆时针旋转降低灵敏度。</p>
+<p>具体操作如下：</p>
+<blockquote>
+<p>※【左旋钮】：调节左摇杆，指示灯左侧流动</p>
+<p>※【右旋钮】：调整右摇杆，指示灯右侧流动</p>
+</blockquote>
+<blockquote>
+<p>※【灵敏度增加】：顺时针转动旋钮，指示灯由下往上流动</p>
+<p>※【灵敏度降低】：逆时针转动旋钮，指示灯由上往下流动</p>
+</blockquote>
+<blockquote>
+<p>※【左摇杆恢复默认】：按住【SHIFT键】不松手，再下压左摇杆，左侧白灯亮起3秒即恢复</p>
+<p>※【右摇杆恢复默认】：按住【SHIFT键】不松手，再下压右摇杆，右侧白灯亮起3秒即恢复</p>
+<p>※【同时恢复默认】：长按【SHIFT键】3秒，上灯条熄灭3秒即左右摇杆灵敏度均恢复默认</p>
+</blockquote>
+<h2 id="增加手柄配重及接收器收纳"><a href="#增加手柄配重及接收器收纳" class="headerlink" title="增加手柄配重及接收器收纳"></a>增加手柄配重及接收器收纳</h2><p>手柄左右两侧握把可沿缝隙打开。</p>
+<p>左右均可加入【6g】【12g】的配重块，可以让手柄从244g依次增加到280g。</p>
+<p><em>配重仓，更可作为【无线接收器收纳仓】使用。</em></p>
+<blockquote>
+<p>① 打开握把面盖，取出无线接收器；</p>
+<p>② 下方小配重仓放置6g的配重块；</p>
+<p>③ 上方小配重仓放置12g的配重块。</p>
+</blockquote>
+<p><img src="22.jpg"></p>
+<blockquote>
+<p>※ 除阿修罗3粉晶特别版外，其他标准版手柄包装不含配重块，配重块需要额外购买。</p>
+<p>※ 可用面值【一角】的硬币代替配重块。</p>
+</blockquote>
+<p>其中小配重仓可装载2枚【一角硬币】，大配重仓可装载4枚【一角硬币】，左右两边一共可装载12枚硬币。</p>
+<h2 id="充电及续航说明"><a href="#充电及续航说明" class="headerlink" title="充电及续航说明"></a>充电及续航说明</h2><p>北通阿修罗3，内置950mAh锂电池，包装附送Type-C装USB数据线。</p>
+<p>手柄满电状态下，最长续航可达80小时，正常使用状态下约为40小时。</p>
+<p><em>注！手柄续航时间受指示灯亮度、手柄震动频率和强度等一系列因素影响，会根据个人使用习惯变化。</em></p>
+<p><strong>充电方式：</strong> </p>
+<p>① 有线连接电脑充电；</p>
+<p>② 有线连接电视充电；</p>
+<p>③ 用手机充电器充电；</p>
+<p>* 有线连接电脑/电视玩游戏时，手柄会同步进行充电。</p>
+<p> <strong>充电，指示灯提示：</strong> </p>
+<p>充电时指示灯呼吸灯，充满后指示灯长亮。</p>
+<blockquote>
+<p>※ 开机状态：无</p>
+<p>※ 关机状态下：颜色顺时针流动，频率：3档</p>
+<p>※ 0-25%：1234流水</p>
+<p>※ 25%-50%：1常亮，234流水</p>
+<p>※ 50%-75%：12常亮，34流水</p>
+<p>※ 75%-99%：123常亮，4呼吸</p>
+<p>※ 满电：1234常亮白灯</p>
+</blockquote>
+<p><img src="23.jpg"></p>
+<p> <strong>低电量，指示灯提示：</strong></p>
+<p>电量低于20%时，12灯红色快闪</p>
+<p><img src="01.gif"></p>
+<h2 id="固件升级说明"><a href="#固件升级说明" class="headerlink" title="固件升级说明"></a>固件升级说明</h2><h3 id="手柄固件自动升级"><a href="#手柄固件自动升级" class="headerlink" title="手柄固件自动升级"></a>手柄固件自动升级</h3><p><img src="22.png"></p>
+<p>① 手柄有线连接上电脑；</p>
+<p>② 电脑打开《北通手柄助手》配置软件；</p>
+<p>③ 手柄助手会自动检查手柄固件版本，并进行自动升级。</p>
+<h2 id="更多其他功能说明"><a href="#更多其他功能说明" class="headerlink" title="更多其他功能说明"></a>更多其他功能说明</h2><h3 id="手柄键位说明"><a href="#手柄键位说明" class="headerlink" title="手柄键位说明"></a>手柄键位说明</h3><p><img src="24.jpg"></p>
+<h3 id="手柄指示灯说明"><a href="#手柄指示灯说明" class="headerlink" title="手柄指示灯说明"></a>手柄指示灯说明</h3><p><img src="25.jpg"></p>
+<h3 id="TURBO连发说明"><a href="#TURBO连发说明" class="headerlink" title="TURBO连发说明"></a>TURBO连发说明</h3><p><img src="26.jpg"></p>
+<p>开启连发：</p>
+<p>按住【动作键】不松手，然后按一下【TURBO键】</p>
+<p>※ 手柄会震动一下，说明连发开启</p>
+<p>关闭连发：</p>
+<p>按住已开启连发的【动作键】不松手，然后按一下【TURBO键】</p>
+<p>※ 手柄无提示</p>
+<h3 id="SHIFT摇杆与十字键互换"><a href="#SHIFT摇杆与十字键互换" class="headerlink" title="SHIFT摇杆与十字键互换"></a>SHIFT摇杆与十字键互换</h3><p><img src="27.jpg"></p>
+<p>轻按一下【SHIFT键】即可开启摇杆与十字键互换功能。</p>
+<h3 id="扳机行程调整"><a href="#扳机行程调整" class="headerlink" title="扳机行程调整"></a>扳机行程调整</h3><p><img src="28.jpg"></p>
+<p>通过手柄背后的扳机锁，可以直接切换LT/RT键的扳机行程</p>
+<blockquote>
+<p>※ 长行程：19°，适合赛车类游戏</p>
+<p>※ 中行程：11°，适合RPG类游戏</p>
+<p>※ 短行程：5°，适合射击、动作类游戏</p>
+</blockquote>
+<h2 id="无线强制配对"><a href="#无线强制配对" class="headerlink" title="无线强制配对"></a><span id="qzpd">无线强制配对</span></h2><h3 id="1、手柄开启强制配对"><a href="#1、手柄开启强制配对" class="headerlink" title="1、手柄开启强制配对"></a>1、手柄开启强制配对</h3><p><img src="02.gif"></p>
+<p>① 保证手柄处于关机状态，可同时按住【BACK键+B键】强制关机；</p>
+<p>② 同时按住【上键+北通LOGO键】不松手3秒，直至指示灯快闪，即进入强制配对状态。</p>
+<h3 id="2、接收器开启强制配对"><a href="#2、接收器开启强制配对" class="headerlink" title="2、接收器开启强制配对"></a>2、接收器开启强制配对</h3><p><img src="29.jpg"></p>
+<p>① 将无线接收器插入USB接口；</p>
+<p>② 用顶针戳一下接收器上的复位孔，指示灯由慢闪变为快闪，即进入强制配对状态；</p>
+<h3 id="3、自动配对成功"><a href="#3、自动配对成功" class="headerlink" title="3、自动配对成功"></a>3、自动配对成功</h3><p><img src="30.jpg"></p>
+<p>稍等片刻，手柄震动一下，指示灯变为常亮即强制配对成功。</p>
+<h3 id="4、根据游戏设备切换手柄模式"><a href="#4、根据游戏设备切换手柄模式" class="headerlink" title="4、根据游戏设备切换手柄模式"></a>4、根据游戏设备切换手柄模式</h3><p><img src="31.jpg"></p>
+<p>长按【北通LOGO键】3秒，切换手柄模式</p>
+<blockquote>
+<p>※ PC360模式：适用于电脑，上灯条亮起3秒</p>
+<p>※ BFM模式：适用于安卓电视，下灯条亮起3秒</p>
+</blockquote>
+<h2 id="关机说明"><a href="#关机说明" class="headerlink" title="关机说明"></a>关机说明</h2><p> <strong>强制关机：</strong></p>
+<p><img src="32.jpg"></p>
+<p>同时按住【BACK键+B键】5秒，指示灯熄灭即为关机</p>
+<blockquote>
+<p>※ 待连接状态下：120秒内未连接成功，自动关机</p>
+<p>※ 已连接状态下：10分钟内无操作，自动关机</p>
+<p>※ 电量不足，自动关机</p>
+</blockquote>
+]]></content>
+  </entry>
+</search>
