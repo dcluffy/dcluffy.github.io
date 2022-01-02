@@ -425,6 +425,12 @@
 <hr>
 <p><code>以上内容均来自微PE官方教程，仅供个人学习之用</code></p>
 ]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>电脑相关</tag>
+      </tags>
   </entry>
   <entry>
     <title>Windows下用Pages服务搭建Hexo博客</title>
@@ -490,7 +496,35 @@
 <h4 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h4><p>接下来就可以开始推送了，但目前推送后要在Gitee Pages页面手动更新才行</p>
 <p><code>npm install hexo-deployer-git --save</code></p>
 <p><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></p>
+<h4 id="补充说明"><a href="#补充说明" class="headerlink" title="补充说明"></a>补充说明</h4><p>GitHub添加公钥</p>
+<p>点击头像——设置——SSH and GPG keys——New SSH key</p>
+<p>添加完输入<code>ssh -T git@github.com</code>测试是否成功</p>
+<p>如果失败，看下有没有开代理、加速器之类的，关掉再来</p>
+<p>GitHub点击+号——new repository——username.github.io（注意格式）</p>
+<p>一定要选Public，然后点击Create repository即创建成功</p>
+<p><img src="github01.png"></p>
+<p>👆这里如前面说的在根目录配置文件改deploy内容，图中有https和ssh，repo后面写其中一个地址即可，https推送失败就改为ssh</p>
+<p>推送之后访问<code>https://username.github.io</code>，如果404，在仓库的设置里——点击Pages——把Source（分支）和Theme Chooser（主题）两个设置一下，再访问一般就可以了</p>
+<hr>
+<p>配置hexo搜索功能</p>
+<p>在站点的根目录下执行以下命令：</p>
+<p><code>npm install hexo-generator-searchdb --save</code></p>
+<p>打开站点根目录的<code>_config.yml</code>文件，添加以下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure>
+
+<p>这里以Next主题为例，还需打开Next主题配置文件<code>hexo根目录\themes\next\_config.yml</code>，启用本地搜索功能，搜索关键词，改为true即可</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>
+
+
+
+
 ]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello World</title>
@@ -511,6 +545,12 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>官方</tag>
+      </tags>
   </entry>
   <entry>
     <title>阿修罗3无线版手柄</title>
@@ -770,5 +810,11 @@
 <p>※ 电量不足，自动关机</p>
 </blockquote>
 ]]></content>
+      <categories>
+        <category>说明书</category>
+      </categories>
+      <tags>
+        <tag>游戏手柄</tag>
+      </tags>
   </entry>
 </search>
